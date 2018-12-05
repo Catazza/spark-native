@@ -17,3 +17,4 @@ export PATH=$PATH:$SPARK_HOME/bin
 
 
 sudo chown -R ubuntu $SPARK_HOME
+
