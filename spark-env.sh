@@ -21,7 +21,8 @@
 # Copy it as spark-env.sh and edit that to configure Spark for your site.
 
 export JAVA_HOME=/usr
-export SPARK_PUBLIC_DNS=`awk 'END{print $1}' /etc/hosts`
+#export SPARK_PUBLIC_DNS=`awk 'END{print $1}' /etc/hosts`
+export SPARK_PUBLIC_DNS=`curl http://169.254.169.254/latest/meta-data/public-ipv4`
 export SPARK_WORKER_CORES=4
 
 # Options read when launching programs locally with
