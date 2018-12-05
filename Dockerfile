@@ -12,4 +12,6 @@ RUN mv /usr/local/spark-* /usr/local/spark
 ENV SPARK_HOME=/usr/local/spark
 ENV PATH=$PATH:$SPARK_HOME/bin
 
-COPY spark-env.sh $SPARK_HOME/conf/spark-env.sh
+#COPY spark-env.sh $SPARK_HOME/conf/spark-env.sh
+
+ADD . .
