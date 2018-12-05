@@ -15,3 +15,8 @@ ENV PATH=$PATH:$SPARK_HOME/bin
 #COPY spark-env.sh $SPARK_HOME/conf/spark-env.sh
 
 ADD . .
+
+RUN cp ./spark-env.sh $SPARK_HOME/conf/spark-env.sh
+RUN cp ./slaves $SPARK_HOME/conf/slaves
+
+RUN apt-get install -y ssh

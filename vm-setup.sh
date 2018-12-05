@@ -18,3 +18,5 @@ export PATH=$PATH:$SPARK_HOME/bin
 
 sudo chown -R ubuntu $SPARK_HOME
 
+cp ./spark-env.sh $SPARK_HOME/conf/spark-env.sh
+cp ./slaves $SPARK_HOME/conf/slaves
