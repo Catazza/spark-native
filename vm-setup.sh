@@ -1,7 +1,8 @@
 # Install Java
-sudo apt update
-sudo apt install -y default-jre
-sudo apt install -y default-jdk
+sudo apt-get update
+sudo apt-get install -y default-jre
+sudo apt-get install -y default-jdk
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/bin/java
 
 # Install Scala
 sudo apt-get install scala
