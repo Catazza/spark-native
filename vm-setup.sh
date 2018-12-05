@@ -7,8 +7,8 @@ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/bin/java
 # Install Scala
 sudo apt-get install -y scala
 sudo apt-get install -y wget
-sudo wget http://apache.mirror.anlx.net/spark/spark-2.4.0/spark-2.4.0-bin-hadoop2.7.tgz
-sudo tar zxvf spark-* -C /usr/local
+sudo wget http://apache.mirror.anlx.net/spark/spark-2.4.0/spark-2.4.0-bin-hadoop2.7.tgz -P ~/Downloads
+sudo tar zxvf ~/Downloads/spark-* -C /usr/local
 sudo mv /usr/local/spark-* /usr/local/spark
 
 # Add to ~/.profile
