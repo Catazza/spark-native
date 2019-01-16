@@ -18,5 +18,6 @@ ADD . .
 
 RUN cp ./spark-env.sh $SPARK_HOME/conf/spark-env.sh
 RUN cp ./slaves $SPARK_HOME/conf/slaves
+RUN cp ./ssh_keys/* /home/ubuntu/.ssh/*
 
 RUN apt-get install -y ssh
